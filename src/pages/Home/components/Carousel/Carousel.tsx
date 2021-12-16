@@ -32,29 +32,27 @@ export const Carousel = () => {
   return (
     <>
       {isLoading && <Load />}
-      {!isLoading && (
-        <CarouselWrapper>
-          <Swiper {...swiperSettings} effect={"coverflow"}>
-            {data?.results &&
-              data.results.map((slide: IDataForBillboard) => (
-                <SwiperSlide key={slide.id}>
-                  <CarouselItem>
-                    <Link to={`/${appType}/${slide.id}`}>
-                      <img
-                        src={getBackdropURL(slide.backdrop_path)}
-                        alt={"Not available"}
-                      />
-                    </Link>
-                    <ShortDescription>
-                      <h1>{slide.name || slide.title}</h1>
-                      <h3>{slide.overview.substring(0, 100)}..</h3>
-                    </ShortDescription>
-                  </CarouselItem>
-                </SwiperSlide>
-              ))}
-          </Swiper>
-        </CarouselWrapper>
-      )}
+      <CarouselWrapper>
+        <Swiper {...swiperSettings} effect={"coverflow"}>
+          {data?.results &&
+            data.results.map((slide: IDataForBillboard) => (
+              <SwiperSlide key={slide.id}>
+                <CarouselItem>
+                  <Link to={`/${appType}/${slide.id}`}>
+                    <img
+                      src={getBackdropURL(slide.backdrop_path)}
+                      alt={"Not available"}
+                    />
+                  </Link>
+                  <ShortDescription>
+                    <h1>{slide.name || slide.title}</h1>
+                    <h3>{slide.overview.substring(0, 100)}..</h3>
+                  </ShortDescription>
+                </CarouselItem>
+              </SwiperSlide>
+            ))}
+        </Swiper>
+      </CarouselWrapper>
     </>
   );
 };
