@@ -1,0 +1,48 @@
+{
+  "home": {
+    "movie": "Movies",
+    "tv": "Series",
+    "Now Playing": "Now Playing",
+    "Top Rated": "Top Rated",
+    "Upcoming": "Upcoming",
+    "Popular": "Popular",
+    "On The Air": "On The Air",
+    "Airing Today": "Airing Today"
+  },
+  "details": {
+    "cast": "Cast",
+    "seasons": "Seasons",
+    "season_aired": "Aired on the",
+    "recommendations": "Recommendations",
+    "similar": "Similar",
+    "reviews": "Reviews",
+    "video": "Video",
+    "overview": "Overview",
+    "status": "Status",
+    "episodes": "number of episodes",
+    "seasons_num": "Number of seasons"
+  },
+  "search": {
+    "params": "Search by parameters",
+    "name": "Search by name",
+    "error": "Nothing found",
+    "genres": "Choose genres to include in the search query",
+    "vote": "Vote count greater or equal to",
+    "sort": {
+      "sort": "Sort by",
+      "popularity_asc": "Popularity ascending",
+      "popularity_dsc": "Popularity descending",
+      "release_asc": "Release date ascending",
+      "release_dsc": "Release date descending",
+      "vote_asc": "Vote average ascending",
+      "vote_dsc": "Vote average descending"
+    }
+  },
+  "notifications": {
+    "movie_added": "The movie has been added to the favourites",
+    "movie_removed": "The movie has been removed from the favourites",
+    "tv_added": "The TV show has been added to the favourites",
+    "tv_removed": "The TV show has been removed from the favourites"
+  },
+    "favourites": "Favourites"
+}
