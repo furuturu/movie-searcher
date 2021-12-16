@@ -1,6 +1,6 @@
 import React from "react";
 import { Home } from "./pages/Home/Home";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { Search } from "./pages/Search/Search";
 import { Favourite } from "./pages/Favourite/Favourite";
 import { Details } from "./pages/Details/Details";
@@ -15,7 +15,6 @@ export const App = () => {
         <Route path={"search"} element={<Search />} />
         <Route path={"favourite"} element={<Favourite />} />
         <Route path={":appType/:id"} element={<Details />} />
-        <Route path={"*"} element={<Navigate to="/" />} />
       </Routes>
       <ToastContainer
         position="bottom-right"
