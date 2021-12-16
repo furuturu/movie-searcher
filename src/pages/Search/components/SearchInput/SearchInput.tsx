@@ -42,6 +42,7 @@ export const SearchInput = () => {
   };
   const handleOnSelect = (selected: { name: string }) => {
     setSearchQuery(selected.name);
+    setInputValue(selected.name);
   };
 
   const lastQueries = useSelector(selectQueries);
