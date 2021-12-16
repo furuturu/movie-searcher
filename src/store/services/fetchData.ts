@@ -14,7 +14,7 @@ export const fetchData = createApi({
     }),
     contentForBillboard: builder.query({
       query: ({ appType, language }) =>
-        `discover/${appType}/?api_key=${API_KEY}&language=${language}`,
+        `discover/${appType}/?api_key=${API_KEY}&language=${language}&page=1`,
     }),
     details: builder.query({
       query: ({ appType, id, language }) =>
